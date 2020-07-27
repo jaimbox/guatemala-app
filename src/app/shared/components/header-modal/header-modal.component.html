@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar class="toolbar-modal">
+    <ion-buttons class="button-back" *ngIf="closeButton === 'true'" slot="start" (click)="close()">
+      <ion-button>
+        <ion-icon [ios]="'arrow-back-outline'" [md]="'arrow-back-sharp'"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title [class.details]="details === true">{{title}}</ion-title>
+  </ion-toolbar>
+  <ion-toolbar *ngIf="search === true">
+    <ion-searchbar [placeholder]="placeholder" showCancelButton="false" (ionInput)="filterList($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>

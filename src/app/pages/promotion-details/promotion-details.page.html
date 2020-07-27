@@ -1,0 +1,54 @@
+<app-header-modal title="Promotion Details"></app-header-modal>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <h2>{{promotion.title}}</h2>
+        <p>Title</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h2>{{promotion.price}} $</h2>
+        <p>Price</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h2>{{promotion.address}}</h2>
+        <p>Address</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h2>{{promotion.latitude}}</h2>
+        <p>Latitude</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h2>{{promotion.longitude}}</h2>
+        <p>Longitude</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h2>{{promotion.created_at | date: 'short' }}</h2>
+        <p>Creation Date</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h2>{{promotion.updated_at | date: 'short' }}</h2>
+        <p>Last Update</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

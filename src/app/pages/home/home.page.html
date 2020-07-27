@@ -1,0 +1,16 @@
+<app-header-modal title="Promotions List" closeButton="false"></app-header-modal>
+
+<ion-content>
+  <ion-list>
+    <ion-item button *ngFor="let promotion of promotions" (click)="showDetails(promotion.id)">
+      <ion-label>
+        <h2>{{promotion.title}}</h2>
+        <p>{{promotion.price}} $</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
