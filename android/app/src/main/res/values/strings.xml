@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Guatemala</string>
+    <string name="title_activity_main">Guatemala</string>
+    <string name="package_name">com.guatemala.app</string>
+    <string name="custom_url_scheme">com.guatemala.app</string>
+</resources>
