@@ -16,6 +16,13 @@ Move into the new folder
 
 `$ npm install`
 
+## Configure Server IP Address
+Open `environment.prod.ts` file located at `src/environments` 
+
+Write your Local IP address in `ipAddress`
+
+For example: `ipAddress: '192.168.100.8'`
+
 ## Run the App
 
 `ionic serve`
@@ -23,6 +30,10 @@ Move into the new folder
 ## Compile the App
 
 `ionic build`
+
+## Copy web assets to platforms
+
+`npx cap copy`
 
 ## Adding the Android platform
 

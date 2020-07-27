@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpErrorResponse, HttpHeaders, HttpParams} from '@angular/common/http';
-import { Observable, throwError } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { PromotionModel } from 'src/app/shared/models/Promotion';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PromotionService {
-    basePath = 'http://192.168.100.8:8000/api/promotions';
+    basePath = `http://${environment.ipAddress}:8000/api/promotions`;
 
     constructor(public http: HttpClient) { }
 
